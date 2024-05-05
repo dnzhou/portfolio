@@ -86,13 +86,17 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', 'Description of Task Board Web Application', event)">
+											<img src="images/pic02.jpg" alt="" />
+										</a>
 										<header>
 											<h3>Task Board Web Application</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image fit" onclick="showPopup('Automated Machine', 'Description of Automated Machine', event)">
+											<img src="images/pic03.jpg" alt="" />
+										</a>
 										<header>
 											<h3>Automated Machine</h3>
 										</header>
@@ -127,6 +131,16 @@
 									</article>
 								</div>
 							</div>
+							<!-- Popup Box -->
+							<div id="popup" class="popup">
+								<div class="popup-content">
+									<span class="close" onclick="closePopup()">&times;</span>
+									<h2 id="popup-title"></h2>
+									<p id="popup-description"></p>
+								</div>
+							</div>
+							
+							<script src="assets/js/script.js"></script>
 
 						</div>
 					</section>
@@ -141,7 +155,7 @@
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-							<p> My name is Danny, and I had recently graduated with a bachelor's 
+							<p>I am a recent graduate with a bachelor's 
 							in Computer Science and Commerce. It is my passion to pursue a role
 							in technology  and I am seeking to land a role in the software
 							engineering space. I have been involved in many projects in and out of university
