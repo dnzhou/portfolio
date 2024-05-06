@@ -86,7 +86,12 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', 'Description of Task Board Web Application', event)">
+										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', '2023 Capstone Project', 
+											'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic04.jpg',
+										event)">
 											<img src="images/pic02.jpg" alt="" />
 										</a>
 										<header>
@@ -94,7 +99,12 @@
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit" onclick="showPopup('Automated Machine', 'Description of Automated Machine', event)">
+										<a href="#" class="image fit" onclick="showPopup('Automated Machine', 'Description of Automated Machine',
+										'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic03.jpg',
+										event)">
 											<img src="images/pic03.jpg" alt="" />
 										</a>
 										<header>
@@ -104,7 +114,12 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', 'Description of Task Board Web Application', event)">
+										<a href="#" class="image fit" onclick="showPopup('Video Game in Unreal Engine 5', 'Description of Video Game in Unreal Engine 5',
+										'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic02.jpg',
+										event)">
 											<img src="images/pic02.jpg" alt="" />
 										</a>
 										<header>
@@ -112,17 +127,27 @@
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', 'Description of Task Board Web Application', event)">
+										<a href="#" class="image fit" onclick="showPopup('Upcoming: Project Zomboid Modding', 'Upcoming: Project Zomboid Modding',
+										'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic02.jpg',
+										event)">
 											<img src="images/pic02.jpg" alt="" />
 										</a>
 										<header>
-											<h3>Networking</h3>
+											<h3>Upcoming: Project Zomboid Modding</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit" onclick="showPopup('Task Board Web Application', 'Description of Task Board Web Application', event)">
+										<a href="#" class="image fit" onclick="showPopup('Upcoming: Webscraper', 'Upcoming: Webscraper',
+										'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic02.jpg',
+										event)">
 											<img src="images/pic02.jpg" alt="" />
 										</a>
 										<header>
@@ -130,19 +155,41 @@
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit" onclick="showPopup('Upcoming: Rangefinder + Coordinate Finder', 'Upcoming: Rangefinder + Coordinate Finder', 
+										'I was tasked to develop and implement the backend \
+											of this application. The backend consisted of a database \
+											and an API system to interface with the frontend.', 
+										'images/pic02.jpg',
+										event)">
+											<img src="images/pic02.jpg" alt="" />
+										</a>
 										<header>
-											<h3>Upcoming: Rangefinder + Coordinates Grabber</h3>
+											<h3>Upcoming: Rangefinder + Coordinate Finder</h3>
 										</header>
 									</article>
 								</div>
 							</div>
 							<!-- Popup Box -->
-							<div id="popup" class="popup">
+
+							<div id = "popup" class="popup"onclick="closePopup(event)">
 								<div class="popup-content">
 									<span class="close" onclick="closePopup()">&times;</span>
-									<h2 id="popup-title"></h2>
-									<p id="popup-description"></p>
+									<div class="popup-details">
+										<div class="top-section">
+											<h2 id="popup-title"></h2>
+											<p id="popup-subtitle"></p>
+										</div>
+										<div class="bottom-section">
+											<div class="left-side">
+												<!-- Image goes here -->
+												<img id="popup-image" src="" alt="" />
+												
+											</div>
+											<div class="right-side">
+												<p id="popup-description"></p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							
@@ -159,7 +206,7 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
 							<p>I am a recent graduate with a bachelor's 
 							in Computer Science and Commerce. It is my passion to pursue a role

@@ -211,50 +211,62 @@ input, select, textarea {
 	}
 
 /* Popup */
-	.popup {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		z-index: 1000;
-	}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
 
-	.popup-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: white;
-		padding: 20px;
-		border-radius: 5px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-		overflow: auto; /* Enable scrolling */
-    	max-height: 80%; /* Set a maximum height to prevent the description box from taking up too much space */
-		width: 1200px; /* Set the width of the description box */
-    	height: 1500px; /* Set the height of the description box */
-	}
-	
-	.close {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		cursor: pointer;
-		font-size: 24px;
-	}
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-	.item {
-		margin-bottom: 20px;
-	}
+.popup-details {
+    width: 80%;
+	height: 80%;
+    max-width: 1200px;
+	max-height: 1600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+#popup-description-additional {
+    margin-right: 20px; /* Increase margin size on the right side */
+}
+.top-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-	/* Offset the description box */
-	.popup-content {
-		margin-left: 185px; /* Adjust this value as needed */
-		/* Add box-shadow specifically for the description box */
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 10px 20px rgba(0, 0, 0, 0.2);
-	}
+.bottom-section {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right-side {
+    flex: 1;
+    padding-left: 20px;
+}
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 24px;
+}
 /* Container */
 
 	.container {
